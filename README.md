@@ -26,14 +26,14 @@
 
 The ACCORD project uses a shared Zotero bibliography [Semantic BIM](https://www.zotero.org/groups/3007408/semantic_bim).
 
-Gdoc [Zotero Productivity # Tag Normalization](https://docs.google.com/document/d/16x4FxvBpBp1rjvnkRArOTTW5ZmScOzBW9v5KT1zh4xQ/edit#heading=h.9ktxpbwgwzb) describes ideas how to use Zotero and additional goodies, 
+Gdoc [Zotero Productivity # Tag Normalization](https://docs.google.com/document/d/16x4FxvBpBp1rjvnkRArOTTW5ZmScOzBW9v5KT1zh4xQ/edit#heading=h.9ktxpbwgwzb) describes ideas how to use Zotero and additional goodies,
 and should become an agreed "local guide" on how we use it.
-  
+
 This project includes Zotero `export` (in various formats) and other files for processing Zotero data.
 In particular, we have these ideas:
 
 - [Normalize Tags](#normalize-tags)
-- Map tags to Wikidata and OpenAlex topics. 
+- Map tags to Wikidata and OpenAlex topics.
   However, WD is missing even our root topic "automated compliance checking", so we'll need to build up
 - Build a Mind Map of the domain, perhaps using Zotero export to "The Brain"
 - Build a comprehensive Citation Network
@@ -52,7 +52,7 @@ In particular, we have these ideas:
 - Have Tools> Developer> Error Console open so you can record errors
   - "Clear" this often if the list gets too large
 
-For RDF formats, convert them to Turtle for easier reading and validation, 
+For RDF formats, convert them to Turtle for easier reading and validation,
 eg Zotero RDF was invalid 9 years ago (see https://github.com/aurimasv/zotero-import-export-formats/issues/4):
 ```
 riot --formatted=turtle "Zotero.rdf"  1>Zotero RDF.ttl
@@ -130,7 +130,7 @@ The only item without Creator is a Standlone note (which is just text and has no
 `coins.html`
 
 Metadata Embedded in HTML spans.
-This is only useful if you want to publish metadata to some other 
+This is only useful if you want to publish metadata to some other
 
 ## Collected Notes
 `collected-notes.html, collected-notes.md`
@@ -154,6 +154,45 @@ Graphviz dot source to generate a citation graph.
 `better-citation-key.txt`
 
 A long `\cite{}` with the keys of all selected items
+
+# Export formats comparison
+
+The result are based on comparing 4 item types:
+- Journal article
+- Video recording
+- Conference paper
+- Blog post
+
+## Result table
+
+| Export format                         | Is data complete             | Is a candidate     | Additional notes |
+| --------------------------------------| -----------------------------| ------------------:|----------------- |
+| CSV                                   | Complete                     | :white_check_mark: | Looks complete, the only concern is a csv format itself |
+| Bibliontology RDF                     | Complete                     | :white_check_mark: | Some data are missing, for instance "Date modified" or "Item type" fields, but looks good overall |
+| BetterBibTeX JSON                     | Complete                     | :white_check_mark: | There might be more tags than in csv file for some reasons |
+| Zotero RDF                            | Some data is missing         | :white_check_mark: | There is a lack of some data, but looks like nothing important is missing |
+| Better CSL JSON                       | Some data is missing         | :white_check_mark: | Few values are missing in comparison to csv |
+| MODS (XML data format)                | Some data is missing         | :white_check_mark: | Most of the time there are the same data as in csv |
+| RefWorks Tagged                       | Some data is missing         | :x:                ||
+| RIS                                   | Some data is missing         | :x:                ||
+| Wikipeadia Citation Templates         | Not complete                 | :x:                ||
+| Wikidata QuickStatements              | Not complete                 | :x:                ||
+| Unqualified Dublin Core RDF           | Not complete                 | :x:                ||
+| TEI (XML data format)                 | Not complete                 | :x:                ||
+| Simple Evernote Export                | Not complete                 | :x:                ||
+| Refer/BiblX                           | Not complete                 | :x:                ||
+| Endnote XML                           | Not complete                 | :x:                ||
+| CSL JSON                              | Not complete                 | :x:                ||
+| Collected notes                       | Not complete                 | :x:                ||
+| Citation Graph                        | Not complete                 | :x:                ||
+| Bookmarks                             | Not complete                 | :x:                ||
+| BibTeX                                | Not complete                 | :x:                ||
+| BibLaTeX                              | Not complete                 | :x:                ||
+| Better CSL YAML                       | Not complete                 | :x:                ||
+| Better BibTeX Citation Key Quick Copy | Not complete                 | :x:                ||
+| Better BibTeX                         | Not complete                 | :x:                ||
+| Better BibLaTeX                       | Not complete                 | :x:                ||
+| COinS                                 | Not complete                 | :x:                ||
 
 # Normalize Tags
 
