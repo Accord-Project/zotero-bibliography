@@ -45,17 +45,22 @@ Write cusotm  logic if author doesn't make feature.
 
 To the clustering on the tags, two options:
 
-### OpenRefine
+### OnToRefine
 
 We can treat the tags manually. [List of clustering algos](https://docs.openrefine.org/technical-reference/clustering-in-depth)
 
 Pros:
 
- - todo
+ - Easier clustering with the GUI. Many different types of algos and parameter customization
 
 Cons:
 
- - todo
+ - Algorithms to passive - Basically, only fix typos in the tags
+
+
+Check to evolution of the tags [here](https://docs.google.com/spreadsheets/d/1XarbGO0ozMMUB6tJPgI3nGGEYaWNx0mgAveT98UeOis/edit?usp=sharing)
+Check the clusters formed [here](https://docs.google.com/spreadsheets/d/1iIqmAfS9807iWpM6_gghJh0bYMM1eSaIUrowg4LfLgs/edit?usp=sharing)
+
 
 ### sklearn
 
@@ -67,10 +72,17 @@ Pros:
 
 Cons:
 
- - todo
+ - Requires knowledge of python
 
 ### Comparison
 
+The levensteing algorithm produced better results, as it only grabbed tags with the same meaning, thus only filtering out wrongly typed tags.
+The python one made lot's of mistakes over-grouping tags in non-relevant clusters.
+
+
+### Subconcept -> Superconcept
+
+TODO
 
 
 
