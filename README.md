@@ -157,5 +157,7 @@ A long `\cite{}` with the keys of all selected items
 
 # Normalize Tags
 
-- gdoc [Zotero Productivity # Tag Normalization](https://docs.google.com/document/d/16x4FxvBpBp1rjvnkRArOTTW5ZmScOzBW9v5KT1zh4xQ/edit#heading=h.9ktxpbwgwzb)
-- issue https://github.com/windingwind/zotero-tag/issues/38 REQ: tag cleanup (normalize/canonicalize tags)
+go to `tag_normalization/README.md`
+
+
+
