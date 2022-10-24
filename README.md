@@ -165,34 +165,34 @@ The result are based on comparing 4 item types:
 
 ## Result table
 
-| Export format                         | Is data complete             | Is a candidate     | Additional notes |
-| --------------------------------------| -----------------------------| ------------------:|----------------- |
-| CSV                                   | Complete                     | :white_check_mark: | Looks complete, the only concern is a csv format itself |
-| Bibliontology RDF                     | Complete                     | :white_check_mark: | Some data are missing, for instance "Date modified" or "Item type" fields, but looks good overall |
-| BetterBibTeX JSON                     | Complete                     | :white_check_mark: | There might be more tags than in csv file for some reasons |
-| Zotero RDF                            | Some data is missing         | :white_check_mark: | There is a lack of some data, but looks like nothing important is missing |
-| Better CSL JSON                       | Some data is missing         | :white_check_mark: | Few values are missing in comparison to csv |
-| MODS (XML data format)                | Some data is missing         | :white_check_mark: | Most of the time there are the same data as in csv |
-| RefWorks Tagged                       | Some data is missing         | :x:                ||
-| RIS                                   | Some data is missing         | :x:                ||
-| Wikipeadia Citation Templates         | Not complete                 | :x:                ||
-| Wikidata QuickStatements              | Not complete                 | :x:                ||
-| Unqualified Dublin Core RDF           | Not complete                 | :x:                ||
-| TEI (XML data format)                 | Not complete                 | :x:                ||
-| Simple Evernote Export                | Not complete                 | :x:                ||
-| Refer/BiblX                           | Not complete                 | :x:                ||
-| Endnote XML                           | Not complete                 | :x:                ||
-| CSL JSON                              | Not complete                 | :x:                ||
-| Collected notes                       | Not complete                 | :x:                ||
-| Citation Graph                        | Not complete                 | :x:                ||
-| Bookmarks                             | Not complete                 | :x:                ||
-| BibTeX                                | Not complete                 | :x:                ||
-| BibLaTeX                              | Not complete                 | :x:                ||
-| Better CSL YAML                       | Not complete                 | :x:                ||
-| Better BibTeX Citation Key Quick Copy | Not complete                 | :x:                ||
-| Better BibTeX                         | Not complete                 | :x:                ||
-| Better BibLaTeX                       | Not complete                 | :x:                ||
-| COinS                                 | Not complete                 | :x:                ||
+| Export format                         | Missing values             | Is a candidate     | Additional notes |
+| --------------------------------------| -----------------------------| -------------------|----------------- |
+| CSV                                   | | :white_check_mark: | Looks fine, the only concern is a csv format itself |
+| Bibliontology RDF                     | Item type, Publication year, Date modified, Access date | :white_check_mark: | Looks like all "important" data are here |
+| BetterBibTeX JSON                     | Publication year, Short title | :white_check_mark: | There might be more tags than in csv file for some reasons. Few values are missing, but nothing critical |
+| Zotero RDF                            | Key, Publication Year, Date Modified | :white_check_mark: | Looks good overall. That's and RDF format |
+| Better CSL JSON                       | Key, Publication year, Access date, Manual tags, Automatic tags | :white_check_mark: | Few values are missing in comparison to csv |
+| MODS (XML data format)                | Key, Publication year, Date modified, Running time, Access date | :white_check_mark: | Few values are missing in comparison to csv |
+| Endnote XML                           | Key, Date added, Date modified, Access date | :white_check_mark: | Looks fine: XML format fits us and only few dates missing |
+| RefWorks Tagged                       | Key, Date modified, Library catalog, Running time, Short title | :x:                | Unsatisfactory format |
+| RIS                                   | Key, Date, Date modified, Running time, Short title | :x:                | Unsatisfactory format |
+| Wikipeadia Citation Templates         | Key, Item type, Abstract, Date added, Date modified, Library catalog, Manual tags, Automatic tags, Language | :x:                | Unsatisfactory format. A lot of missing data |
+| Wikidata QuickStatements              | Key, Item type, Publication year, Abstract, Date added, Date modified, Access date, Library catalog, Automatic tags, Running time, ISBN, Publisher, Conference name,  | :x:                | Unsatisfactory format. A lot of missing data |
+| Unqualified Dublin Core RDF           | Key, Publication year, Publication title, Abstract note, Date added, Date modified, Access date, Pages, Issue, Volume, Journal abbreviation, Language, Library catalog, Extra, Manual tags, Automatic tags | :x:                | A lot of missing data |
+| TEI (XML data format)                 | Abstract note, Date, Date added, Date modified, Access date, Pages, Language, Library catalog, Extra, Manual tags, ISBN, DOI, Automatic tags, Conference name | :x:                | A lot of missing data |
+| Simple Evernote Export                | Key, Item type, Publication year, Author, Publication title, ISSN, ISBN, DOI, Url, Abstract note, Date, Date added, Date modified, Access date, Pages, Issue, Volume, Journal abbreviation, Language, Library catalog, Extra | :x:                | Unsatisfactory format. A lot of missing data |
+| Refer/BiblX                           | Key, Publication year, ISSN, DOI, Date added, Date modified, Access date, Library catalog, Extra, Running time, Conference name, Short title | :x:                | A lot of missing data |
+| CSL JSON                              | Key, Publication year, Date added, Date modified, Short title, Language, Manual tags, Automatic tags | :x:                | A lot of missing data |
+| Collected notes                       | No data exporting video recording, conference paper, blog post. Exporting journal article only title, authors and date presented | :x:                | A lot of missing data |
+| Citation Graph                        | No data | :x:                ||
+| Bookmarks                             | Key, Item type, Publication year, Author, Publication title, ISSN, DOI, Abstract note, Date, Date added, Date modified, Access date, Pages, Issue, Volume, Journal abbreviation, Language, Library catalog, Extra, Running time, Short title | :x:                | A lot of missing data |
+| BibTeX                                | Key, Item type, Date, Date added, Date modified, Access date, Library catalog, Running time, conference name, Short title | :x:                | A lot of missing data |
+| BibLaTeX                              | Key, Item type, Publication year, Date added, Date modified, Access date, Library catalog, Running time, Short title | :x:                | A lot of missing data |
+| Better CSL YAML                       | Key, Publication year, Date, Date added, Date modified, Short title, Language, Manual tags, Automatic tags | :x:                | Might be a candidate if we don't care about the missing fields. From my point of view, tags might be important |
+| Better BibTeX Citation Key Quick Copy | No data | :x:                ||
+| Better BibTeX                         | Key, Publication year, Title, Url, Date added, Date modified, Access date, Library catalog, Running , Conference name, Short title | :x:                | A lot of missing data |
+| Better BibLaTeX                       | Key, Item type, Publication year, Date, Date modified, Library catalog, Running time, Short title | :x:                | Might be a candidate, but there is other formats to choose with less missing data |
+| COinS                                 | Key, Item type, Publication year, Url, Abstract, Date added, Date modified, Access date, Library catalog, Extra, Manual tags, Automatic tags, Running time | :x:                | Unsatisfactory format. A lot of missing data |
 
 # Normalize Tags
 
