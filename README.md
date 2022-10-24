@@ -171,9 +171,9 @@ The result are based on comparing 4 item types:
 | Bibliontology RDF                     | Item type, Publication year, Date modified, Access date | :white_check_mark: | Looks like all "important" data are here |
 | BetterBibTeX JSON                     | Publication year, Short title | :white_check_mark: | There might be more tags than in csv file for some reasons. Few values are missing, but nothing critical |
 | Zotero RDF                            | Key, Publication Year, Date Modified | :white_check_mark: | Looks good overall. That's and RDF format |
-| Better CSL JSON                       | Key, Publication year, Access date, Manual tags, Automatic tags | :white_check_mark: | Few values are missing in comparison to csv |
 | MODS (XML data format)                | Key, Publication year, Date modified, Running time, Access date | :white_check_mark: | Few values are missing in comparison to csv |
 | Endnote XML                           | Key, Date added, Date modified, Access date | :white_check_mark: | Looks fine: XML format fits us and only few dates missing |
+| Better CSL JSON                       | Key, Publication year, Access date, Manual tags, Automatic tags | :x: | Tags are missing, but this information looks important |
 | RefWorks Tagged                       | Key, Date modified, Library catalog, Running time, Short title | :x:                | Unsatisfactory format |
 | RIS                                   | Key, Date, Date modified, Running time, Short title | :x:                | Unsatisfactory format |
 | Wikipeadia Citation Templates         | Key, Item type, Abstract, Date added, Date modified, Library catalog, Manual tags, Automatic tags, Language | :x:                | Unsatisfactory format. A lot of missing data |
