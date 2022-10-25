@@ -130,7 +130,7 @@ The only item without Creator is a Standlone note (which is just text and has no
 `coins.html`
 
 Metadata Embedded in HTML spans.
-This is only useful if you want to publish metadata to some other
+COinS is an abbreviation for "ContextObjects in Spans". It's basically an html tag <span> with some metadata inside it. One of the use cases is to embed bibliographic citation to web pages.
 
 ## Collected Notes
 `collected-notes.html, collected-notes.md`
